@@ -1,5 +1,5 @@
 var config = {
-    lang: 'nl',
+    lang: 'en',
     time: {
         timeFormat: 12
     },
@@ -7,25 +7,24 @@ var config = {
         //change weather params here:
         //units: metric or imperial
         params: {
-            q: 'Baarn,Netherlands',
-            units: 'metric',
+            q: 'Pittsburgh, PA',
+            units: 'imperial',
             // if you want a different lang for the weather that what is set above, change it here
-            lang: 'nl',
-            APPID: 'YOUR_FREE_OPENWEATHER_API_KEY'
+            lang: 'en',
+            APPID: 'b7fa8fcf22b037fb2ef1b184c9fe4f8b'
         }
     },
     compliments: {
         interval: 30000,
         fadeInterval: 4000,
         morning: [
-            'Good morning, handsome!',
+            'Good morning, did you take your heart medication?',
             'Enjoy your day!',
             'How was your sleep?'
         ],
         afternoon: [
-            'Hello, beauty!',
-            'You look sexy!',
-            'Looking good today!'
+            'Hello, I see you worked out this afternoon, how did it feel?',
+            'Did you take your meds?',
         ],
         evening: [
             'Wow, you look hot!',

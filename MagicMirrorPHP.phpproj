@@ -1,0 +1,68 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Name>MagicMirrorPHP</Name>
+    <ProjectGuid>{53e22b66-3ece-4196-90d2-a9314999afd7}</ProjectGuid>
+    <RootNamespace>MagicMirrorPHP</RootNamespace>
+    <OutputType>Library</OutputType>
+    <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <IncludeDebugInformation>true</IncludeDebugInformation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <IncludeDebugInformation>false</IncludeDebugInformation>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="controllers\functions\gzip.php" />
+    <Compile Include="controllers\calendar.php" />
+    <Compile Include="controllers\hash.php" />
+    <Compile Include="css\main.css" />
+    <Compile Include="css\weather-icons.css" />
+    <Compile Include="font\HelveticaNeue-Light.eot" />
+    <Compile Include="font\HelveticaNeue-Light.svg" />
+    <Compile Include="font\HelveticaNeue-Light.ttf" />
+    <Compile Include="font\HelveticaNeue-Light.woff" />
+    <Compile Include="font\HelveticaNeue-Medium.eot" />
+    <Compile Include="font\HelveticaNeue-Medium.svg" />
+    <Compile Include="font\HelveticaNeue-Medium.ttf" />
+    <Compile Include="font\HelveticaNeue-Medium.woff" />
+    <Compile Include="font\HelveticaNeue-UltraLight.eot" />
+    <Compile Include="font\HelveticaNeue-UltraLight.svg" />
+    <Compile Include="font\HelveticaNeue-UltraLight.ttf" />
+    <Compile Include="font\HelveticaNeue-UltraLight.woff" />
+    <Compile Include="font\weathericons-regular-webfont.eot" />
+    <Compile Include="font\weathericons-regular-webfont.svg" />
+    <Compile Include="font\weathericons-regular-webfont.ttf" />
+    <Compile Include="font\weathericons-regular-webfont.woff" />
+    <Compile Include="js\calendar\calendar.js" />
+    <Compile Include="js\compliments\compliments.js" />
+    <Compile Include="js\news\news.js" />
+    <Compile Include="js\time\time.js" />
+    <Compile Include="js\version\version.js" />
+    <Compile Include="js\weather\weather.js" />
+    <Compile Include="js\config.js" />
+    <Compile Include="js\ical_parser.js" />
+    <Compile Include="js\jquery.feedToJSON.js" />
+    <Compile Include="js\jquery.js" />
+    <Compile Include="js\main.js" />
+    <Compile Include="js\moment-with-locales.min.js" />
+    <Compile Include="js\rrule.js" />
+    <Compile Include="js\socket.io.min.js" />
+    <Compile Include="index.php" />
+    <Compile Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="controllers\functions" />
+    <Folder Include="controllers" />
+    <Folder Include="css" />
+    <Folder Include="font" />
+    <Folder Include="js\calendar" />
+    <Folder Include="js\compliments" />
+    <Folder Include="js\news" />
+    <Folder Include="js\time" />
+    <Folder Include="js\version" />
+    <Folder Include="js\weather" />
+    <Folder Include="js" />
+  </ItemGroup>
+</Project>

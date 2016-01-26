@@ -113,7 +113,7 @@ calendar.updateCalendar = function (eventList) {
 		var e = eventList[i];
 
 		var row = $('<tr/>').css('opacity',opacity);
-		row.append($('<td/>').html(e.description).addClass('description'));
+		row.append($('<td/>').html(e.description.substring(0, 25)).addClass('description'));
 		row.append($('<td/>').html(e.days).addClass('days dimmed'));
 		table.append(row);
 
